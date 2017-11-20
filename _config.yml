@@ -6,11 +6,11 @@ description: A responsive site template designed by HTML5 Up<br /> and released 
 baseurl: "/my_Blog-2018" # the subpath of your site, e.g. /blog
 url: "//keyboard-l.github.io" # the base hostname & protocol for your site
 author:
-street_address:
-city: 佛山
-state: 广东
-zip_code: 528200
-country: 中国
+street_address: Xidian University
+city: Xi'an
+state: SN
+zip_code: 710118
+country: China
 phone:
 
 # homepage tiles

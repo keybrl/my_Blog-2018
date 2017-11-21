@@ -2,7 +2,8 @@
 layout: project
 title: "概率神教 - 优秀的问题解决方案"
 date: "2017-11-19"
-excerpt: "SS::STA 被取消的Web组第二次活动，前端部分，关于“HTML和CSS”"
+excerpt: "你是否需要做决定时发现缺少一枚硬币？你是否上午上完课身心俱疲不知道午饭吃什么？你是否走进一间奇异的课室不知道该坐哪？那你一定会乐于拥抱“概率神教”。这个项目或许能帮到你。"
+image: images/project_img/Coin/icon.png
 ---
 
 该项目可以帮助你完成你日常会遇到的绝大多数问题。
@@ -19,7 +20,7 @@ excerpt: "SS::STA 被取消的Web组第二次活动，前端部分，关于“HT
 
 他目前主要有3个功能
 
-![手机端效果预览](./img/preview.png)
+![手机端效果预览]({{ site.assets_url }}/images/project_img/Coin/preview.png)
 
 #### Coin
 
@@ -63,4 +64,4 @@ excerpt: "SS::STA 被取消的Web组第二次活动，前端部分，关于“HT
 
 虽然概率之神乐于为你指明方向且不需要酬劳，但是该项目的作者非常贫穷。如果你觉得该项目非常棒，而且你刚好有闲钱，你肯定很乐意打赏项目作者的。如果的确如此，你可以通过下方**微信赞赏码**向我打赏
 
-![扫码向我转账](./img/donate.png)
+![扫码向我转账]({{ site.assets_url }}/images/project_img/Coin/donate.png)

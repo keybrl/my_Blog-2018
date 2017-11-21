@@ -3,7 +3,7 @@ title: Keybrl
 subtitle: who is nothing!
 email: keyboard-l@outlook.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/my_Blog-2018" # the subpath of your site, e.g. /blog
+baseurl: "//keybrl-my-blog.oss-cn-shenzhen.aliyuncs.com/2018" # the subpath of your site, e.g. /blog
 url: "//keyboard-l.github.io" # the base hostname & protocol for your site
 assets_url: "//keybrl-my-blog.oss-cn-shenzhen.aliyuncs.com/2018"
 author:

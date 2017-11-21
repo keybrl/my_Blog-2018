@@ -36,7 +36,7 @@
     <!-- One -->
     <section id="one" class="tiles">
     	{% for post in site.posts %}
-    	{% if site.tiles-source == 'posts' %}
+    	{% if site.tiles-source == 'posts' and post.layout == 'post' %}
         <article>
           <span class="image">
             <img src="{{ site.assets_url }}/{{ post.image }}" alt="" />
@@ -49,7 +49,7 @@
     	{% endif %}
     	{% endfor %}
     	{% for page in site.pages %}
-    	{% if site.tiles-source == 'pages' %}
+    	{% if site.tiles-source == 'pages' and page.layout == 'post' %}
         <article>
           <span class="image">
             <img src="{{ site.assets_url }}/{{ page.image }}" alt="" />

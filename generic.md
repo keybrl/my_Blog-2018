@@ -2,7 +2,7 @@
 layout: post
 title: Generic
 description: Lorem ipsum dolor est
-image: {{ site.assets_url }}/images/pic11.jpg
+image: //keybrl-my-blog.oss-cn-shenzhen.aliyuncs.com/2018/images/pic11.jpg
 nav-menu: true
 ---
 

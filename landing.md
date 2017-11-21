@@ -2,7 +2,7 @@
 title: Landing
 layout: landing
 description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
-image: {{ site.assets_url }}/images/pic07.jpg
+image: //keybrl-my-blog.oss-cn-shenzhen.aliyuncs.com/2018/images/pic07.jpg
 nav-menu: true
 ---
 

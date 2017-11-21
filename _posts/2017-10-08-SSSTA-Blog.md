@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在GitHub上通过Jekyll搭建个人博客"
+title: "SS::STA - 在GitHub上通过Jekyll搭建个人博客"
 date: "2017-10-08"
 description: "10分钟拥有一个自己的博客"
 ---
@@ -38,7 +38,7 @@ description: "10分钟拥有一个自己的博客"
 
 **GitHub是一个通过Git进行版本控制的软件源代码托管平台**，那是一个有趣的地方，多去逛逛。
 
-![Welcome home, developers]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/welcome_home.png)
+![Welcome home, developers]({{ site.assets_url }}/images/SSSTA-Blog/welcome_home.png)
 
 GitHub主要可以帮助你保管代码，协助你与小伙伴合作写项目以及为你提供大量优秀的开源项目（这样你就不用自己写了）
 
@@ -55,18 +55,18 @@ GitHub主要可以帮助你保管代码，协助你与小伙伴合作写项目�
 
 首先查看仓库克隆地址
 
-![仓库克隆地址]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/clone_url.png)
+![仓库克隆地址]({{ site.assets_url }}/images/SSSTA-Blog/clone_url.png)
 
 然后在本地克隆一份
 
-```
+```bash
 cd .
 git clone http://github.com/xxx/example.git
 ```
 
 然后进入本地仓库目录
 
-```
+```bash
 cd ./example
 ```
 
@@ -76,20 +76,28 @@ cd ./example
 
 首先是将目前文件夹里的内容加到仓库中
 
-```
+```bash
 git add .
 ```
 
 然后提交修改
 
-```
+```bash
 git commit -m 'summary
 description'
 ```
 
+> 如果此时弹出类似 `Please tell me who you are` 的字样，那你需要先写两行配置信息
+>
+> `git config --global user.name "{{ Your name }}"`
+>
+> `git config --global user.email "{{ Your email }}"`
+>
+> 两个大括号以及他们内部的内容用自己的真实信息替换
+
 当然以上都是对本地仓库的操作，我们把修改后的仓库推到GitHub
 
-```
+```bash
 git push origin master
 ```
 
@@ -103,8 +111,6 @@ git push origin master
 4. push
 
 就是这样，很多事情就是这么枯燥乏味，但却很有趣。
-
-
 
 ## Jekyll
 
@@ -128,8 +134,6 @@ Jekyll是个好东西，他非常神奇，对**前端**感兴趣的同学可以�
 
 我们就说说修改配置文件
 
-
-
 ## GitHub Pages
 
 GitHub Pages服务相当于为你提供一个静态网站服务器，对前端比较感兴趣的可能对此挺高兴，多数静态的前端作品都可以用这个展示出来。而且他还支持Jekyll，所以你用Jekyll写的（搬的）博客也可放在这上面。
@@ -144,8 +148,6 @@ GitHub Pages服务相当于为你提供一个静态网站服务器，对前端�
 
 > 关于**域名**的问题后面选读
 
-
-
 ## Markdown
 
 **我们一般用Markdown写博客**
@@ -158,23 +160,19 @@ Markdown是一种轻量化的标记语言，他非常适合写博客。除此之
 
 > 好好学学，你们可以看看我的第一篇博客[《Markdown语法基础》](http://blog.keybrl.com/2016/11/13/The-base-of-grammar-in-Markdown.html)
 
-
-
 ## 最后的复习
 
 我们借着推送一份文章的机会再最后复习一下Git和GitHub的操作
 
 将文章按照要求写好，放在`_post`文件夹中
 
-```
+```bash
 git add .
 git commit -m 'push a new article'
 git push origin master
 ```
 
 我们刷新一下自己刚搭好的博客，会不会有一种感动
-
-
 
 ## 域名的选购与解析(选读)
 
@@ -230,9 +228,9 @@ git push origin master
 
 如果我们要解析到自己的GitHub Pages，那么你就选择`CNAME`记录类型，记录值填`username.github.io.`，`username`是你的GitHub用户名，主机记录按自己喜好填，其他默认。然后在GitHub上再填上自己解析好的域名，确定，即可。
 
-![腾讯云设置解析]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/tencentcloud_dns_set.png)
+![腾讯云设置解析]({{ site.assets_url }}/images/SSSTA-Blog/tencentcloud_dns_set.png)
 
-![GitHub设置自定义域名]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/github_domain_set.png)
+![GitHub设置自定义域名]({{ site.assets_url }}/images/SSSTA-Blog/github_domain_set.png)
 
 然后就大功告成了，你可以试着访问一下。
 
@@ -244,12 +242,6 @@ git push origin master
 >
 > （虽然这样看起来很傻）
 
-
-
-
-
-
-
 ## 用SSH连接GitHub仓库(选读)
 
 之前我们一直在使用HTTPS连接自己的GitHub仓库，这样你经常需要登录，很麻烦，而且并不很安全。所以GitHub提供了一种免密连接的方法，......
@@ -259,8 +251,6 @@ git push origin master
 > 参考阅读：
 >
 > [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
-
-
 
 ## 写在最后
 
@@ -274,29 +264,19 @@ git push origin master
 
 > [git - 简易指南](http://www.bootcss.com/p/git-guide/)
 >
->
->
 > [GitHub Help](https://help.github.com/)
->
->
 >
 > [Coding 帮助文档](https://coding.net/help/)
 >
 > 虽然我不很喜欢Coding.net，但是刚开始我的确是用Coding指导我在GitHub的操作的。感谢睿神让我知道这个东西。
 >
->
->
 > [Jekyll - Official Site](http://jekyllcn.com/)
 >
 > 这回是中文的
 >
->
->
 > [Markdown语法基础 - Keyboard L](http://blog.keybrl.com/2016/11/13/The-base-of-grammar-in-Markdown.html)
 >
 > 我就是这么恬不知耻地推荐自己写的文章
->
->
 >
 > [W3School](http://www.w3school.com.cn/)
 >
@@ -307,7 +287,5 @@ git push origin master
 > [Stay Hungry,Stay Foolish.](http://tobiaslee.top/) - 李主席
 >
 > [叁拾柒 – Personal Site](http://www.three7.cc/) - 钟副主席
->
->
 >
 > [Keyboard L](http://blog.keybrl.com/) - 这个几乎不写博客的垃圾的我

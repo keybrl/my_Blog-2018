@@ -1,6 +1,11 @@
-# Python入门1
+---
+layout: post
+title: "SS::STA - Python入门1"
+date: "2017-09-29"
+description: "SS::STA第一次活动，关于Python的初步认识"
+---
 
-[TOC]
+> [点击此链接]({{ site.assets_url }}/data/SSSTA%20-%20Python%E5%85%A5%E9%97%A81%20-%20%E7%BD%97%E9%98%B3%E8%B1%AA.zip)，下载该篇所涉及的源代码
 
 ## 什么是Python
 
@@ -14,23 +19,14 @@
 >
 > **is Open.**
 >
-> 
->
 > These are some of the reasons people who use Python would rather not use anything else.
 >
-> 
->
 > [Welcome to Python.org](https://www.python.org/)
-
-
 
 - Python是一种解释型[^1]计算机程序设计语言
 - 他优雅、简洁、高效[^2]、通用，他能让你更专注于解决具体问题
 - 大量的内置的和第三方的库将使你事半功倍，只需几行代码便能实现复杂的功能
 - ...
-
-
-
 
 > [Python - Official Site](https://www.python.org/)
 >
@@ -40,12 +36,9 @@
 >
 > 总结一句，他很好玩！
 
-
-
 > 1989的圣诞节，......可能那时还没有冬季特惠吧
 
 ---
-
 
 试看以下这两段代码
 
@@ -78,13 +71,9 @@ int main()
 
 他们的功能几乎是一样的。但是用C语言写的比用Python写的要复杂得多[^3]
 
-> ##### 其实你们真的不用在意代码写了啥
-
-
+> **其实你们真的不用在意代码写了啥**
 
 以上的比较还仅仅是单纯从语法上，如果Python使用一些强大的库，那将极大地提高效率
-
-
 
 ```python
 # try_flask.py
@@ -99,9 +88,7 @@ if __name__ == "__main__":
     app.run()
 ```
 
-你肯定不会想到，以上这7行代码就实现了一个简单的Web服务器。当然，他引入了一个很棒的库`flask`
-
-
+你肯定不会想到，以上这7行代码就实现了一个简单的Web服务器。当然，他引入了一个很棒的库 `flask`
 
 ```python
 # font_image.py
@@ -138,13 +125,9 @@ if __name__ == '__main__':
             f.write(txt)
 ```
 
-以上是一个有趣的小玩意，使用了第三方库`pillow`。
-
-
+以上是一个有趣的小玩意，使用了第三方库 `pillow`。
 
 > 你们可以试着拿C语言写一下，我反正不会233
-
-
 
 ## Python的2、3之争
 
@@ -152,23 +135,15 @@ if __name__ == '__main__':
 >
 > 不过最起码，Python3的字符编码处理比Python2好多了。
 
-
-
 > *Python2.7.13* : 更丰富的教学资源、更多支持且稳定的库、更稳定的语言特性[^4]
 
 > *Python3.6.2* : 目前最高的Python版本，拥有更长久支持与维护。或许有更广阔的发展空间？或许更酷？
 
-
-
 **Python2.7系列以及目前的Python3.6系列的代码是相互不可兼容的，学习之前最好能多做了解，明确自己的方向。** *（我们还是尽量用Python3.6吧）*
-
-
 
 ## 开始使用
 
 在结束了一轮介绍之后，现在我们先来做一些比较实际的工作
-
-
 
 ### 代码如何被执行？ -- Python解释器
 
@@ -187,7 +162,7 @@ if __name__ == '__main__':
 
 打开**终端**，使用apt命令安装py2或py3
 
-```
+```bash
 apt-get install python
 apt-get install python3
 ```
@@ -196,44 +171,34 @@ apt-get install python3
 
 使用`python`启动Python2.x，或`python3`启动python3.x
 
-
-
 ### Python的力量之源
 
 前面说过Python拥有大量的官方和第三方库，这是高效的源泉（之一）。嗯，所以管理他们很重要。
-
-
 
 **pip**就是一个**\***好的Python包管理器
 
 > 以上涉嫌违反广告法的部分已用*代替
 
-
-
 Windows使用[`pip-get.py`脚本](https://pip.pypa.io/en/stable/installing/)安装
 
-```
+```bash
 python get-pip.py
 py -3 get-pip.py
 ```
 
 Ubuntu可以通过apt工具安装
 
-```
+```bash
 apt-get install python-pip
 apt-get install python3-pip
 ```
 
-
-
 安装完成之后可以使用pip命令安装Python第三方库，比如一个优雅的HTTP库`requests`
 
-```
+```bash
 pip install requests
 pip3 install requests
 ```
-
-
 
 ### 代码写在哪？
 
@@ -241,7 +206,7 @@ pip3 install requests
 
 - 命令行的Python交互式环境（**Linux终端**、**PowerShell**、CMD、...）
 - 文本编辑器 + 命令行（[**sublime text 3**](http://www.sublimetext.com/)、Notepad ++、Visual Studio Code、...）
-- IDE（[**PyCharm**](https://www.jetbrains.com/pycharm/)、IDLE、Visual Studio*（这一定是在开玩笑）*、...）
+- IDE（[**PyCharm**](https://www.jetbrains.com/pycharm/)、IDLE、Visual Studio *（这一定是在开玩笑）* 、...）
 - [pythonanywhere](https://www.pythonanywhere.com/)等在线编译器
 - [QPython](http://www.qpython.com/)等移动端编译器
 
@@ -249,11 +214,7 @@ pip3 install requests
 
 交互式环境可以做简单测试，文本编辑器可以小修小补，IDE可以做大事
 
-
-
 第四、五种还是算了吧，玩玩就好。
-
-
 
 ## 写在最后
 
@@ -267,8 +228,6 @@ pip3 install requests
 >
 > 主要基于Python3，主要关注语法
 >
-> 
->
 > 《Python核心编程（第二版）》
 >
 > 主要基于Python2，前三分之二是语法后面是一些应用
@@ -279,17 +238,13 @@ pip3 install requests
 >
 > > 第三版并不是第二版的超集
 >
-> 
->
 > ......鄙人书读得少，欢迎强者补充
 
 ### 人生的经验
 
 > 很多概念，在没有接触过足够多的事物，没有经过足够多的思考，没有足够的知识积累之前是没法理解的
 >
-> 所以我们先不用理解，只要知道 *什么样？* 以及 *怎么用？*即可
->
-> 
+> 所以我们先不用理解，只要知道 *什么样？* 以及 *怎么用？* 即可
 >
 > 以及，多看多想！
 
@@ -299,11 +254,7 @@ pip3 install requests
 import this
 ```
 
-
-
 > The Zen of Python, by Tim Peters
->
-> 
 >
 > Beautiful is better than ugly.
 >
@@ -343,19 +294,7 @@ import this
 >
 > Namespaces are one honking great idea -- let's do more of those!
 
-
-
-
-
-
-
-
-
-
-
-
-
-[^1]: https://zh.wikipedia.org/wiki/%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80 
+[^1]: https://zh.wikipedia.org/wiki/%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80
 [^2]: 此处是指写代码比较高效，而非运行得高效
 [^3]: 行数多600%，字符数多240%
 [^4]: 自2016-12-17更新至Python2.7.13至今Python2.x再无更新，极可能以后也不再有更新

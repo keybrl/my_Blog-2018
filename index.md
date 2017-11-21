@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "主页"
-landing-title: "‘你好，伙计！’"
+landing-title: "'Hello World!'"
 description: null
 image: null
 author: null

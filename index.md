@@ -7,4 +7,6 @@ image: null
 author: null
 ---
 
-Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
+该博客主要包含了Keyboard学习中的心得体会、知识的归纳总结、优秀读物的摘录还有SS::STA活动的教案。文章内容主要和Web方面相关
+
+如有兴趣可以前往“取阅”

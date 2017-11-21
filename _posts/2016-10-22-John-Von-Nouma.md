@@ -3,7 +3,7 @@ layout: post
 title: "从冯·诺依曼体系结构启航"
 date: "2016-10-22"
 description: "大一 “计算机导论Ⅰ” 课程的大作业，关于冯诺依曼体系结构对今天计算机发展的影响。"
-image: images/von.jpg
+image: images/John-Von-Nouma/title_image.jpg
 ---
 
 ## 1946

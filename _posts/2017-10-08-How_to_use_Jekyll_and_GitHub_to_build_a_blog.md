@@ -38,7 +38,7 @@ description: "10分钟拥有一个自己的博客"
 
 **GitHub是一个通过Git进行版本控制的软件源代码托管平台**，那是一个有趣的地方，多去逛逛。
 
-![Welcome home, developers](./img/welcome_home.png)
+![Welcome home, developers]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/welcome_home.png)
 
 GitHub主要可以帮助你保管代码，协助你与小伙伴合作写项目以及为你提供大量优秀的开源项目（这样你就不用自己写了）
 
@@ -55,7 +55,7 @@ GitHub主要可以帮助你保管代码，协助你与小伙伴合作写项目�
 
 首先查看仓库克隆地址
 
-![仓库克隆地址](./img/clone_url.png)
+![仓库克隆地址]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/clone_url.png)
 
 然后在本地克隆一份
 
@@ -156,7 +156,7 @@ Markdown是一种轻量化的标记语言，他非常适合写博客。除此之
 
 这是非常优雅的东西，这份课案，上一份课案，以及你们见到的我的所有课案都是用Markdown写的。多数编辑器都可以将Markdown转换为pdf（打印和交流）、html（应用于网页）、图片（方便分享）。
 
-> 好好学学，你们可以看看我的第一篇博客[《Markdown语法基础》](http://blog.keybrl.com/The-base-of-grammar-in-Markdown/)
+> 好好学学，你们可以看看我的第一篇博客[《Markdown语法基础》](http://blog.keybrl.com/2016/11/13/The-base-of-grammar-in-Markdown.html)
 
 
 
@@ -230,9 +230,9 @@ git push origin master
 
 如果我们要解析到自己的GitHub Pages，那么你就选择`CNAME`记录类型，记录值填`username.github.io.`，`username`是你的GitHub用户名，主机记录按自己喜好填，其他默认。然后在GitHub上再填上自己解析好的域名，确定，即可。
 
-![腾讯云设置解析](./img/tencentcloud_dns_set.png)
+![腾讯云设置解析]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/tencentcloud_dns_set.png)
 
-![GitHub设置自定义域名](./img/github_domain_set.png)
+![GitHub设置自定义域名]({{ site.assets_url }}/images/How_to_use_Jekyll_and_GitHub_to_build_a_blog/github_domain_set.png)
 
 然后就大功告成了，你可以试着访问一下。
 
@@ -292,7 +292,7 @@ git push origin master
 >
 >
 >
-> [Markdown语法基础 - Keyboard L](http://blog.keybrl.com/The-base-of-grammar-in-Markdown/)
+> [Markdown语法基础 - Keyboard L](http://blog.keybrl.com/2016/11/13/The-base-of-grammar-in-Markdown.html)
 >
 > 我就是这么恬不知耻地推荐自己写的文章
 >

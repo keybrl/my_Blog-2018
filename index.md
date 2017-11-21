@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Home
-landing-title: 'Hi, my name is Keyboard L'
+title: "主页"
+landing-title: "'你好，伙计！'"
 description: null
 image: null
 author: null

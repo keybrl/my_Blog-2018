@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "在GitHub上通过Jekyll搭建个人博客"
-date: "2017.10.08"
+date: "2017-10-08"
 description: "10分钟拥有一个自己的博客"
 ---
 

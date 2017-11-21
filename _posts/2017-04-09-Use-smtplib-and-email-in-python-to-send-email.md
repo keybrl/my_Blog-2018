@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "使用Python的smtplib和email发送邮件"
-date: "2017.04.09"
+date: "2017-04-09"
 description: "关于如何使用Python发送邮件的一点学习总结"
 ---
 

@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "使用Python的smtplib和email发送邮件"
-date:   2017-04-09
-excerpt: "关于如何使用Python发送邮件的一点学习总结"
-tag: 原创
-comments: true
+title: "使用Python的smtplib和email发送邮件"
+date: "2017.04.09"
+description: "关于如何使用Python发送邮件的一点学习总结"
 ---
 
 > *smtplib*和*email*是*Python*的两个官方库
@@ -480,4 +478,3 @@ server.quit()
 看了几份代码，基本上应该能发现使用smtplib发送邮件的步骤是一样的，变的只是使用email构造邮件的方法。而且，构造邮件也是有一定相似之处的，首先创建邮件，然后加入头部的信息，然后将正文文本、HTML以及附带的图片、附件通过`.attach()`方法逐一加入到创建的邮件中去，如此便能构建出一份完整的邮件。
 
 > 所以说还是挺简单的嘛
-

@@ -1,12 +1,8 @@
 ---
 layout: post
-title:  "在GitHub上通过Jekyll搭建个人博客"
-date:   2017-10-08
-excerpt: "10分钟拥有一个自己的博客"
-tag:
-- 原创
-- SSS::TA教学
-comments: true
+title: "在GitHub上通过Jekyll搭建个人博客"
+date: "2017.10.08"
+description: "10分钟拥有一个自己的博客"
 ---
 
 搭建和维护个人博客以及写博客是一件非常酷的事情，而且这也基本可以算是每个程序员的必备技能之一。一个个人博客既是自己的一张名片也可以作为自己学习的见证。
@@ -278,31 +274,31 @@ git push origin master
 
 > [git - 简易指南](http://www.bootcss.com/p/git-guide/)
 >
-> 
+>
 >
 > [GitHub Help](https://help.github.com/)
 >
-> 
+>
 >
 > [Coding 帮助文档](https://coding.net/help/)
 >
 > 虽然我不很喜欢Coding.net，但是刚开始我的确是用Coding指导我在GitHub的操作的。感谢睿神让我知道这个东西。
 >
-> 
+>
 >
 > [Jekyll - Official Site](http://jekyllcn.com/)
 >
 > 这回是中文的
 >
-> 
+>
 >
 > [Markdown语法基础 - Keyboard L](http://blog.keybrl.com/The-base-of-grammar-in-Markdown/)
 >
 > 我就是这么恬不知耻地推荐自己写的文章
 >
-> 
 >
-> [W3School](http://www.w3school.com.cn/) 
+>
+> [W3School](http://www.w3school.com.cn/)
 >
 > 前端相关
 
@@ -312,7 +308,6 @@ git push origin master
 >
 > [叁拾柒 – Personal Site](http://www.three7.cc/) - 钟副主席
 >
-> 
+>
 >
 > [Keyboard L](http://blog.keybrl.com/) - 这个几乎不写博客的垃圾的我
-

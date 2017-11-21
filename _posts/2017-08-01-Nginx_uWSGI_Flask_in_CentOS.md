@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "CentOS中通过Nginx和uWSGI部署Flask项目"
-date:   2017-08-01
-excerpt: "部署Flask项目的新姿势"
-tag: 原创
-comments: true
+title: "CentOS中通过Nginx和uWSGI部署Flask项目"
+date: "2017.08.01"
+description: "部署Flask项目的新姿势"
 ---
 
 在之前的很长一段时间里，我部署Flask项目都是使用Flask自带的服务器的。在开发环境中使用Flask自带的服务器还是相当方便的，但是在生产环境中使用这种简陋的服务器似乎并不大好（虽然我也不知道哪里不好）。不管怎么说，为了提高自己的知识水平，我也费了一天的时间稍微学习了一点人生的经验——*Nginx和uWSGI*
@@ -231,4 +229,3 @@ ps -e
 ```
 kill -9 PID
 ```
-

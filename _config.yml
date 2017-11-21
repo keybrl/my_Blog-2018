@@ -20,15 +20,16 @@ tiles-count: 6
 
 # social settings
 500px_url:
-facebook_url:
+facebook_url: http://facebook.com/keyboardlyh
 github_url: https://github.com/Keyboard-l
 gitlab_url:
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+googleplus_url: https://plus.google.com/u/0/115943444746417030467
+instagram_url:
+linkedin_url:
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/andrewbanchich
+twitter_url: https://twitter.com/Keyboard_L
+steam_url: http://steamcommunity.com/id/keyboard_l
 
 # build settings
 markdown: kramdown

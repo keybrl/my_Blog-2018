@@ -3,6 +3,7 @@ layout: project
 title: "概率神教 - 优秀的问题解决方案"
 date: "2017-11-19"
 excerpt: "你是否需要做决定时发现缺少一枚硬币？你是否上午上完课身心俱疲不知道午饭吃什么？你是否走进一间奇异的课室不知道该坐哪？那你一定会乐于拥抱“概率神教”。这个项目或许能帮到你。"
+description: "科学决策，关于random()的极致利用"
 image: images/project_img/Coin/icon.png
 ---
 

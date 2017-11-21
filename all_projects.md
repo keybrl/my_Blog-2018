@@ -1,8 +1,8 @@
 ---
-title: "项目"
+title: "项目集"
 landing-title: "优雅的代码"
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: '优雅不是与生俱来的觉悟<br>而是永不放弃的自我追求和永无止息的练习造就的'
 image: images/pic07.jpg
 nav-menu: true
 ---
@@ -14,9 +14,11 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Sed amet aliquam</h2>
+			<h2>代码的优雅和项目的优雅</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+		<p>项目代码的优雅非常重要，健壮性、易维护、可拓展等都算是代码的优雅</p>
+    <p>但是更重要的，是项目整体的优雅。一个项目，或者说是一个作品，应该体现设计者的思想。这种思想体现在项目的方方面面，上至整体功能和实现的构思，甚至是对项目存在的必要性的考虑，下至每一个交互细节、每一个色块...</p>
+    <p>该页面主要展示了Keyboard自以为不错的优雅的项目供大家批判。如果有兴趣可以选择浏览</p>
 	</div>
 </section>
 
@@ -48,11 +50,13 @@ nav-menu: true
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Massa libero</h2>
+			<h2>自我批判与欣赏</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+		<p>代码总会非常多的，自我批判除可以提高自己知识水平也能在一定程度上自我安慰。</p>
+    <P>垃圾的代码肯定越写越多的，除了可以自我批判，也可以挑一些看起来没那么差的东西放到GitHub上给自己欣赏一下，让自己拥有小小的成就感。</p>
+    <p>当然，如果能恬不知耻地将自己GitHub账号推荐给大家，让大家看看垃圾代码，然后发表一些积极意见，更是能让自己有成就感。</p>
 		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
+			<li><a href="https://github.com/Keyboard-l" class="button next">我的GitHub主页</a></li>
 		</ul>
 	</div>
 </section>

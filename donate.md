@@ -29,7 +29,7 @@ nav-menu: true
     <h3>PayPal</h3>
     <p>虽然我不建议你这么做，但你还是可以通过PayPal向我打赏的</p>
     <p>你只需要点击下方的按钮</p>
-    <a class="button icon fa-paypal" href="https://www.paypal.me/keyboardl">PayPal</a>
+    <a class="button icon fa-paypal" target="_blank" href="https://www.paypal.me/keyboardl">PayPal</a>
   </div>
 </div>
 

@@ -5,7 +5,7 @@ date: "2017-12-19"
 description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定义的全文引用"
 ---
 
-part of [Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
+part of [Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)  
 RFC 2616 Fielding, et al.
 
 ## 10 Status Code Definitions

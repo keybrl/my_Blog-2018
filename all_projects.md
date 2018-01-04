@@ -2,8 +2,8 @@
 title: "项目集"
 landing-title: "优雅"
 layout: landing
-description: '优雅不是与生俱来的觉悟<br>而是永不放弃的自我追求和永无止息的练习造就的'
-image: images/pic07.jpg
+description: '优雅不是与生俱来的觉悟<br>而是永不放弃的自我追求和永无止息的练习成就的'
+image: images/project_title.jpg
 nav-menu: true
 ---
 

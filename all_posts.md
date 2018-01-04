@@ -3,8 +3,8 @@ layout: allposts
 title: "全部文章"
 landing-title: "思维"
 nav-menu: true
-description: null
-image: null
+description: '从2016年至今~<br>历数着Keyboard的一件件思维成果'
+image: images/post_title.png
 author: null
 ---
 

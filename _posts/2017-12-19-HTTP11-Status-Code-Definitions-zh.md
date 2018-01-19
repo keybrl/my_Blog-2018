@@ -8,8 +8,8 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 > part of [Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)  
 > RFC 2616 Fielding, et al.
 
-这篇文章是[Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)的一部分  
-RFC 2616，Fielding等人所著
+这篇文章是 *[Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)* 的一部分  
+*RFC 2616* ，Fielding等人所著
 
 ## 10 Status Code Definitions （状态码定义）
 
@@ -228,28 +228,39 @@ RFC 2616，Fielding等人所著
 
 临时URI **应该** 在响应的 `Location` 字段给出。除非请求方法是HEAD，否则响应的实体 **应该** 包含一条简短的超文本记录，该记录包含一个转至新URI的超链接。
 
-If the 302 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.
+> If the 302 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.
 
-如果接收到302状态码来响应除GET或HEAD以外的请求，用户代理不能自动重定向请求，除非用户可以确认，因为这可能会改变发出请求的条件。
+如果用户代理接收到一个302状态的响应，且该响应是对一个非GET或HEAD方法的请求的回应，那么用户代理 **绝不能** 自动重定向，除非经过用户的确认，因为这可能不符合最初发送请求的条件。
 
-> Note: RFC 1945 and RFC 2068 specify that the client is not allowed  
-> to change the method on the redirected request.  However, most  
-> existing user agent implementations treat 302 as if it were a 303  
-> response, performing a GET on the Location field-value regardless  
-> of the original request method. The status codes 303 and 307 have  
-> been added for servers that wish to make unambiguously clear which  
-> kind of reaction is expected of the client.
+> > Note: RFC 1945 and RFC 2068 specify that the client is not allowed  
+> > to change the method on the redirected request.  However, most  
+> > existing user agent implementations treat 302 as if it were a 303  
+> > response, performing a GET on the Location field-value regardless  
+> > of the original request method. The status codes 303 and 307 have  
+> > been added for servers that wish to make unambiguously clear which  
+> > kind of reaction is expected of the client.
+
+> 注意：尽管RFC 1945和RFC 2068已明确不允许客户端更改重定向请求所使用的请求方  
+> 法。但是，现有的多数用户代理实现都将302响应当作303响应处理，无论原始请求方法  
+> 是什么，都对 `Location` 字段值发送GET请求。状态码303和307已被添加到那些希望  
+> 明确获知客户端期望何种反应的服务器中。
 
 #### 10.3.4 303 See Other
 
-The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource. This method exists primarily to allow the output of a POST-activated script to redirect the user agent to a selected resource. The new URI is not a substitute reference for the originally requested resource. The 303 response MUST NOT be cached, but the response to the second (redirected) request might be cacheable.
+> The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource. This method exists primarily to allow the output of a POST-activated script to redirect the user agent to a selected resource. The new URI is not a substitute reference for the originally requested resource. The 303 response MUST NOT be cached, but the response to the second (redirected) request might be cacheable.
+
+对请求的响应可以在另一个URI下找到，并且 **应该** 使用GET方法在新的URI中重新获取资源。此方法主要用于允许后激活的脚本的输出将用户代理重定向到选定的资源。新的URI不是最初请求的资源的替代参考。303响应绝不能被缓存，但对第二个（重定向的）请求的响应可能是可缓存的。
 
 The different URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).
+
+不同的URI应该由响应中的位置字段给出。 除非请求方法是HEAD，否则响应的实体应该包含一个超链接到新URI的短超文本记录。
 
 > Note: Many pre-HTTP/1.1 user agents do not understand the 303  
 > status. When interoperability with such clients is a concern, the  
 > 302 status code may be used instead, since most user agents react  
 > to a 302 response as described here for 303.
+
+注意：许多pre-HTTP / 1.1用户代理不了解303状态。 当与这种客户端的互操作性是一个问题时，可以使用302状态码来代替，因为大多数用户代理响应302响应，如303所述。
 
 #### 10.3.5 304 Not Modified
 

@@ -154,4 +154,4 @@ Poker2是一款很低调的键盘，他只有黑白两种颜色，也没有什�
 
 最后是灯效演示环节
 
-<video src="{{ site.assets_url }}/images/lighted-poker2/29.mp4" controls="controls"></video>
+<video src="{{ site.assets_url }}/images/lighted-poker2/29.webm" controls="controls"></video>

@@ -271,9 +271,9 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 如果客户端发送了有条件的GET请求并被允许访问，但文档尚未被修改，则服务器 **应该** 使用此状态码进行响应。304响应 **绝不能** 包含消息体，因此总是在头部字段后的第一个空行后终止。
 
 > The response MUST include the following header fields:
-
+>
 > - Date, unless its omission is required by section 14.18.1
-
+>
 > If a clockless origin server obeys these rules, and proxies and clients add their own Date to any response received without one (as already specified by [RFC 2068], section [14.19](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19)), caches will operate correctly.
 >
 > - ETag and/or Content-Location, if the header would have been sent  

@@ -173,7 +173,7 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 
 > This class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request. The action required MAY be carried out by the user agent without interaction with the user if and only if the method used in the second request is GET or HEAD. A client SHOULD detect infinite redirection loops, since such loops generate network traffic for each redirection.
 
-这类状态码表明用户代理需要采取进一步行动来完成请求。当且仅当第二个请求中使用的方法是GET或HEAD时，所需的进一步行动 **可以** 由用户代理自动执行，而不与用户进行交互。客户端 **应该** 检测到无限重定向循环，因为这样循环的每个重定向都在浪费网络流量。
+这类状态码表明用户代理需要采取进一步行动来完成请求。当且仅当第二个请求中使用的方法是GET或HEAD时，所需的进一步行动 **可以** 由用户代理自动执行，而不与用户进行交互。客户端 **应该** 检测到无限重定向循环，因为这种循环的每个重定向都在浪费网络流量。
 
 > > Note: previous versions of this specification recommended a  
 > > maximum of five redirections. Content developers should be aware  
@@ -187,11 +187,11 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 
 > The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent-driven negotiation information (section 12) is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location.
 
-所请求的资源对应于一组记录的任意一条，每条记录都有其唯一的地址，并且提供代理驱动（agent-driven）的协商信息（第12节），这使得用户（或用户代理）可以选择一条最优的记录，并重定向到那个地址。
+所请求的资源对应于一组记录的任意一条，每条记录都有其唯一的地址，并且提供代理驱动（agent-driven）的协商信息（第12节），这使得用户（或用户代理）可以选择一条最优的记录，并重定向到所选的地址。
 
 > Unless it was a HEAD request, the response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. Depending upon the format and the capabilities of the user agent, selection of the most appropriate choice MAY be performed automatically. However, this specification does not define any standard for such automatic selection.
 
-除非是HEAD请求，否则响应 **应该** 包含一个实体，该实体包含一个描述了资源的特性和地址的列表，用户或用户代理可以从中选择最合适的一个。实体格式由 `Content-Type` 头部字段中给出的媒体类型所指定。用户代理 **可以** 根据其设计和功能，自动选择最合适的选项。但是，该规范没有为这种自动选择定义任何标准。
+除非是HEAD请求，否则响应 **应该** 附带一个内含列表的实体，该列表列出了资源的特性和资源所在的地址，用户或用户代理可以从中选择最合适的一个。实体格式由 `Content-Type` 头部字段中给出的媒体类型所指定。用户代理 **可以** 根据其设计和功能，自动选择最合适的选项。但是，该规范没有为这种自动选择定义任何标准。
 
 > If the server has a preferred choice of representation, it SHOULD include the specific URI for that representation in the Location field; user agents MAY use the Location field value for automatic redirection. This response is cacheable unless indicated otherwise.
 
@@ -205,11 +205,11 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 
 > The new permanent URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).
 
-新的永久URI **应该** 在响应的 `Location` 字段给出。除非请求方法是HEAD，否则响应的实体 **应该** 包含一条简短的超文本记录，该记录包含一个转至新URI的超链接。
+新的永久URI **应该** 在响应的 `Location` 字段给出。除非请求方法是HEAD，否则响应的实体 **应该** 包含一条简短的超文本记录，该记录包含一个转到新URI的超链接。
 
 > If the 301 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.
 
-如果用户代理接收到一个301状态的响应，且该响应是对一个非GET或HEAD方法的请求的回应，那么用户代理 **绝不能** 自动重定向，除非经过用户的确认，因为这可能不符合最初发送请求的条件。
+如果用户代理接收到一个301状态的响应，且该响应是对一个既非GET亦非HEAD请求的回应，那么除非经过用户的确认，否则用户代理 **绝不能** 自动重定向，因为这可能不符合最初发送请求的条件。
 
 > > Note: When automatically redirecting a POST request after  
 > > receiving a 301 status code, some existing HTTP/1.0 user agents  
@@ -218,7 +218,7 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 > 注意：在收到一个301状态码后，自动重定向一个POST请求时，一些现有  
 > 的HTTP/1.0用户代理会错误地将其更改为GET请求。
 
-#### 10.3.3 302 Found
+#### 10.3.3 302 Found （已创建）
 
 > The requested resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client SHOULD continue to use the Request-URI for future requests. This response is only cacheable if indicated by a Cache-Control or Expires header field.
 
@@ -226,11 +226,11 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 
 > The temporary URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).
 
-临时URI **应该** 在响应的 `Location` 字段给出。除非请求方法是HEAD，否则响应的实体 **应该** 包含一条简短的超文本记录，该记录包含一个转至新URI的超链接。
+临时URI **应该** 在响应的 `Location` 字段给出。除非请求方法是HEAD，否则响应的实体 **应该** 包含一条简短的超文本记录，该记录包含一个转到新URI的超链接。
 
 > If the 302 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.
 
-如果用户代理接收到一个302状态的响应，且该响应是对一个非GET或HEAD方法的请求的回应，那么用户代理 **绝不能** 自动重定向，除非经过用户的确认，因为这可能不符合最初发送请求的条件。
+如果用户代理接收到一个302状态的响应，且该响应是对一个既非GET亦非HEAD方法的请求的回应，那么除非经过用户的确认，否则用户代理 **绝不能** 自动重定向，因为这可能不符合最初发送请求的条件。
 
 > > Note: RFC 1945 and RFC 2068 specify that the client is not allowed  
 > > to change the method on the redirected request.  However, most  
@@ -242,41 +242,54 @@ description: "对 Hypertext Transfer Protocol -- HTTP/1.1 中关于状态码定�
 
 > 注意：尽管RFC 1945和RFC 2068已明确不允许客户端更改重定向请求所使用的请求方  
 > 法。但是，现有的多数用户代理实现都将302响应当作303响应处理，无论原始请求方法  
-> 是什么，都对 `Location` 字段值发送GET请求。状态码303和307已被添加到那些希望  
-> 明确获知客户端期望何种反应的服务器中。
+> 是什么，都对 `Location` 字段值发送GET请求。为了满足那些希望明确获知客户端期望何
+> 种反应的服务器，状态码303和307已被添加到新的规范中。
 
-#### 10.3.4 303 See Other
+#### 10.3.4 303 See Other （查看其它）
 
 > The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource. This method exists primarily to allow the output of a POST-activated script to redirect the user agent to a selected resource. The new URI is not a substitute reference for the originally requested resource. The 303 response MUST NOT be cached, but the response to the second (redirected) request might be cacheable.
 
-对请求的响应可以在另一个URI下找到，并且 **应该** 使用GET方法在新的URI中重新获取资源。此方法主要用于允许后激活的脚本的输出将用户代理重定向到选定的资源。新的URI不是最初请求的资源的替代参考。303响应绝不能被缓存，但对第二个（重定向的）请求的响应可能是可缓存的。
+对请求的响应可以在另一个URI下被找到，并且 **应该** 使用GET方法通过新的URI重新获取资源。此方法主要用于允许POST方法激活的脚本（POST-activated script）的输出，从而将用户代理重定向到选定的的资源。新的URI并不是最初请求的资源的替代链接。303响应 **绝不能** 被缓存，但对第二个（重定向的）请求的响应可能是可缓存的。
 
-The different URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).
+> The different URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).
 
-不同的URI应该由响应中的位置字段给出。 除非请求方法是HEAD，否则响应的实体应该包含一个超链接到新URI的短超文本记录。
+新的URI **应该** 由响应中的 `Location` 字段给出。除非请求方法是HEAD，否则响应的实体 **应该** 包含一条简短的超文本记录，该记录包含一个转到新URI的超链接。
 
-> Note: Many pre-HTTP/1.1 user agents do not understand the 303  
-> status. When interoperability with such clients is a concern, the  
-> 302 status code may be used instead, since most user agents react  
-> to a 302 response as described here for 303.
+> > Note: Many pre-HTTP/1.1 user agents do not understand the 303  
+> > status. When interoperability with such clients is a concern, the  
+> > 302 status code may be used instead, since most user agents react  
+> > to a 302 response as described here for 303.
 
-注意：许多pre-HTTP / 1.1用户代理不了解303状态。 当与这种客户端的互操作性是一个问题时，可以使用302状态码来代替，因为大多数用户代理响应302响应，如303所述。
+> 注意：许多pre-HTTP/1.1用户代理不能理解303状态。如果担忧与这种客户端的  
+> 交互性，可以使用302状态码来代替303状态码，因为多数用户代理对302的反应  
+> 像对303描述的那样。
 
-#### 10.3.5 304 Not Modified
+#### 10.3.5 304 Not Modified （未修改）
 
-If the client has performed a conditional GET request and access is allowed, but the document has not been modified, the server SHOULD respond with this status code. The 304 response MUST NOT contain a message-body, and thus is always terminated by the first empty line after the header fields.
+> If the client has performed a conditional GET request and access is allowed, but the document has not been modified, the server SHOULD respond with this status code. The 304 response MUST NOT contain a message-body, and thus is always terminated by the first empty line after the header fields.
 
-The response MUST include the following header fields:
+如果客户端发送了有条件的GET请求并被允许访问，但文档尚未被修改，则服务器 **应该** 使用此状态码进行响应。304响应 **绝不能** 包含消息体，因此总是在头部字段后的第一个空行后终止。
 
-- Date, unless its omission is required by section 14.18.1
+> The response MUST include the following header fields:
 
-If a clockless origin server obeys these rules, and proxies and clients add their own Date to any response received without one (as already specified by [RFC 2068], section [14.19](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19)), caches will operate correctly.
+> - Date, unless its omission is required by section 14.18.1
 
-- ETag and/or Content-Location, if the header would have been sent  
-in a 200 response to the same request
-- Expires, Cache-Control, and/or Vary, if the field-value might  
-differ from that sent in any previous response for the same  
-variant
+> If a clockless origin server obeys these rules, and proxies and clients add their own Date to any response received without one (as already specified by [RFC 2068], section [14.19](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19)), caches will operate correctly.
+>
+> - ETag and/or Content-Location, if the header would have been sent  
+> in a 200 response to the same request
+> - Expires, Cache-Control, and/or Vary, if the field-value might  
+> differ from that sent in any previous response for the same  
+> variant
+
+响应 **必须** 包含以下头部字段：
+
+- `Date` ，除非按第14.18.1节要求省略
+
+如果无时钟的源服务器服从这些规则，并且代理和客户端将它们自己的日期添加到收到的任何的没有日期的响应中（如[RFC 2068]，[14.19]中所述），则缓存将正常运行。
+
+- `ETag` 和/或 `Content-Location` ，如果头部已经在一个对该请求的200响应中被发送。
+- `Expires` ， `Cache-Control` ，和/或 `Vary` ，如果字段值可能不同于在以往对该请求的任何响应中被发送的该字段值的变种
 
 If the conditional GET used a strong cache validator (see section 13.3.3), the response SHOULD NOT include other entity-headers. Otherwise (i.e., the conditional GET used a weak validator), the response MUST NOT include other entity-headers; this prevents inconsistencies between cached entity-bodies and updated headers.
 
@@ -292,9 +305,11 @@ The requested resource MUST be accessed through the proxy given by the Location 
 > single request, and to be generated by origin servers only.  Not  
 > observing these limitations has significant security consequences.
 
-#### 10.3.7 306 (Unused)
+#### 10.3.7 306 (Unused) （已停止使用）
 
-The 306 status code was used in a previous version of the specification, is no longer used, and the code is reserved.
+> The 306 status code was used in a previous version of the specification, is no longer used, and the code is reserved.
+
+306状态码曾被用于先前版本的规范，现已不再使用，但仍保留该代码。
 
 #### 10.3.8 307 Temporary Redirect
 

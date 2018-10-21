@@ -4,7 +4,7 @@ subtitle: who is nothing!
 email: keyboard-l@outlook.com
 description: "Keyboard L 的个人博客<br>主要用于为Keyboard个人记录思维成果和对外进行思想渗透"
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "//blog.keybrl.com" # the base hostname & protocol for your site
+url: "https://keybrl.github.io/my_Blog-2018" # the base hostname & protocol for your site
 assets_url: "//keybrl-my-blog.oss-cn-shenzhen.aliyuncs.com/2018"
 author:
 street_address: Xidian University
